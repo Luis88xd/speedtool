@@ -1,0 +1,360 @@
+*{
+text-decoration: none !important;
+outline: 0 !important;
+
+}
+.row {
+  margin: 0 !important;
+  padding: 0;
+}
+
+@font-face {
+ font-family: spartan;
+ src: url("../fonts/spartanregular.otf"); 
+}
+
+@font-face {
+ font-family: spartanbold;
+ src: url("../fonts/spartanblack.otf"); 
+}
+
+@font-face {
+	font-family: poppins;
+	src: url("../fonts/poppins.otf");
+}
+
+@font-face {
+	font-family: poppinsbold;
+	src: url("../fonts/poppinsbold.otf");
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  max-width: 100%;
+  position: relative;
+  margin: 0 auto;
+  overflow-x: hidden;
+  background: #f3f2f7!important;
+  padding: 70px 20px;
+
+}
+.container-in {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+/*------------------
+    Preloder
+--------------------*/
+#preloder {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    background: #f1f1f1;
+    display: table;
+}
+
+.loader {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.loader p {
+    animation: loader 0.8s linear infinite;
+    -webkit-animation: loader 0.8s linear infinite;
+    width: 100%;
+    float: none;
+    margin: auto color:#ccc;
+    text-align: center;
+    font-size: 34px;
+    font-family: poppinsbold;
+}
+.loader img {
+    animation: loader 0.8s linear infinite;
+    -webkit-animation: loader 0.8s linear infinite;
+    width: 310px;
+}
+@keyframes loader {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes loader {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.logo_dashboard {
+	width: 80px;
+	height: 80px;
+	overflow: hidden;
+	border-radius: 50px;
+	border: 3px solid #474ddc;
+}
+.logo_dashboard img{
+	width: 100%;
+}
+.sidebar-dashboard {
+	background: #fff;
+	border-radius: 40px;
+	padding: 80px 30px;
+}
+.store-name h1 {
+	font-size: 14px;
+	font-family: spartanbold;
+	color: #20334d;
+}
+.store-name h2 {
+	font-size: 14px;
+	font-family: spartan;
+	color: #20334d;
+}
+.col-md-4, .col-md-3, .col-md-8, .col-md-9, .col-md-6, .col-md-12 {
+	padding: 0!important;
+}
+.store-name {
+	position: relative;
+	top: 15px;
+}
+.sidebar-dashboard .nav-sidebar {
+	font-size: 14px;
+	font-family: spartan;
+	padding: 80px 0px;
+}
+.sidebar-dashboard .nav-sidebar .collapse a li {
+	margin: 0 0 15px 0;
+	font-size: 12px;
+	height: auto!important;
+}
+.sidebar-dashboard .nav-sidebar .collapsing a li {
+	margin: 0 0 15px 0;
+	font-size: 12px;
+	height: auto!important;
+}
+.sidebar-dashboard .nav-sidebar .collapse {
+	margin-left: 35px;
+}
+.sidebar-dashboard .nav-sidebar .collapsing {
+	margin-left: 35px;
+}
+.sidebar-dashboard .nav-sidebar ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.sidebar-dashboard .nav-sidebar ul li {
+	margin: 0 0 40px 0;
+}
+.sidebar-dashboard .nav-sidebar .active-dashboard{
+	color: #3F8AFB;
+	transition:all 0.3s;
+}
+.sidebar-dashboard .nav-sidebar ul a{
+	color: #2c2c2c;
+	transition: all 0.3s;
+	width: 100%;
+}
+.sidebar-dashboard .nav-sidebar ul a:hover {
+	color: #3F8AFB;
+	transition:all 0.3s;
+}
+.sidebar-dashboard .nav-sidebar .active-dashboard svg path {
+	fill: #3F8AFB;
+	transition: all 0.3s;
+}
+.sidebar-dashboard .nav-sidebar ul a:hover svg path {
+	fill: #3F8AFB;
+	transition: all 0.3s;
+}
+.sidebar-dashboard .nav-sidebar ul li svg {
+	width: 20px;
+	position: relative;
+	top: -3px;
+	margin-right: 15px;
+}
+.sidebar-dashboard .nav-sidebar .collapse-sidebar {
+	width: 7px;
+	position: relative;
+	top: 4px;
+	float: right;
+}
+.container-dash {
+	max-width: 1380px;
+	margin: 0 auto;
+}
+.analytics-body {
+	padding: 0px 50px;
+}
+.analytics-body h1 {
+	font-family: poppinsbold;
+	font-size: 26px;
+	color: #20334d;
+}
+.filters{
+	width: 100%;
+}
+.filters select {
+	background: #f3f2f7;
+	border: 1px solid #a2a2a2;
+	border-radius: 20px;
+	padding: 10px;
+	color: #a2a2a2;
+	cursor: pointer;
+	font-family: poppins;
+	font-size: 12px;
+	width: 98%;
+}
+
+.filters input {
+	background: #f3f2f7;
+	border: 1px solid #a2a2a2;
+	border-radius: 20px;
+	padding: 10px;
+	color: #a2a2a2;
+	cursor: pointer;
+	font-family: poppins;
+	font-size: 12px;
+	width: 98%;
+}
+.filters p {
+	font-size: 14px;
+	font-family: 'poppins';
+	margin: 20px 0;
+}
+.container-modules {
+	padding: 60px 0;
+}
+.container-modules .back-item.black {
+	background: #20334d;
+	padding: 30px;
+	border-radius: 40px;
+	height: 290px;
+	width: 95%;
+}
+.container-modules .back-item.black h1 {
+	color: #fff;
+	position: relative;
+	top: 60px;
+}
+.container-modules .back-item {
+	background: #fff;
+	padding: 30px;
+	border-radius: 40px;
+	height: 290px;
+	width: 95%;
+}
+.container-modules .back-item h1 {
+	color: #20334d;
+	position: relative;
+	top: 60px;
+}
+
+.container-modules .back-item p {
+	color: #20334d;
+	position: relative;
+	top: 60px;
+	font-size: 14px;
+	font-family: poppins;
+}
+.container-modules .back-item a {
+	color: #20334d;
+	position: relative;
+	top: 60px;
+	font-size: 14px;
+	font-family: poppins;
+	transition:all 0.3s;
+}
+
+.container-modules .back-item a:hover {
+	color: #474ddc;
+	transition:all 0.3s;
+}
+.modalInfoDataSites .aDetails-body h1 {
+	color: #20334d;
+	font-family: poppinsbold;
+	font-size: 26px;
+}
+.modalInfoDataSites .aDetails-body h2{
+	color: #20334d;
+	position: relative;
+	font-size: 14px;
+	font-family: poppins;
+}
+.modalInfoDataSites .modal-body {
+	padding: 40px;
+}
+.modalInfoDataSites .modal-content {
+	position: relative;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	width: 100%;
+	pointer-events: auto;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid rgba(0,0,0,.2);
+	border-radius: 30px;
+	outline: 0;
+}
+.modalInfoDataSites .detail {
+	padding: 50px 0;
+}
+.modalInfoDataSites .back-detail-total {
+	background: #20334d;
+	padding: 40px;
+	border-radius: 30px;
+}
+.modalInfoDataSites .back-detail-total span{
+	font-family: 'poppins';
+	font-size: 14px;
+	color: #fff;
+}
+.modalInfoDataSites .back-detail-total h1{
+	font-family: 'poppinsbold';
+	font-size: 54px;
+	color: #fff;
+}
+.modalInfoDataSites .back-resume{
+	padding: 0 20px;
+}
+.modalInfoDataSites .back-resume .resume_device span {
+	font-size: 40px;
+	font-family: 'poppinsbold';
+	color: #20334d6b;
+}
+.modalInfoDataSites .back-resume .resume_device p{
+	font-size: 10px;
+	font-family: 'poppins';
+}
+.chart-body {
+	padding: 50px 0;
+}
+.dashboard{
+	position: relative;
+}
+.side_bar {
+	position: fixed;
+	width: 25%;
+}
+.back-chart {
+	background: #fff;
+	padding: 60px;
+	border-radius: 40px;
+}

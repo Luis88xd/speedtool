@@ -6,7 +6,7 @@ class SessionController extends CI_Controller{
 	}
 
 	function index(){
-		echo "Ravioli Ravioli dame la formuoli";
+		$this->load->view('Client/Dashboard/Body.php');
 	}
 }
 
